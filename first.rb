@@ -27,6 +27,7 @@ class Vehicle
 
     def display
         #how to iterate and display properties?
+        puts "#{@no_of_wheels}, #{@horsepower}, #{@type_of_tank}, #{@capacity}"
     end
 end
 
