@@ -29,3 +29,22 @@ end
 
 reverse_word("dog")
 
+def fizz_buzz_fun(num)
+    i = 1
+    while i <= num do 
+        if i % 15 === 0
+            puts "fizzBuzz"
+        elsif i % 5 === 0
+            puts "fizz"
+        elsif i % 3 === 0
+            puts "Buzz"
+        else
+            puts i
+        end
+        i+=1
+    end
+end
+
+fizz_buzz_fun(5)
+
+
