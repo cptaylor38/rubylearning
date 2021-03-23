@@ -9,7 +9,7 @@ import Rails from '@rails/ujs';
 import Turbolinks from 'turbolinks';
 import * as ActiveStorage from '@rails/activestorage';
 import 'channels';
-
+//https://stackoverflow.com/questions/64636601/why-does-my-bootstrap-in-rails-6-not-work
 Rails.start();
 Turbolinks.start();
 ActiveStorage.start();
