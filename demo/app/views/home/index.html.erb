@@ -1,2 +1,9 @@
-<h1>Create your own team of super heroes!</h1>
-<p>Select the create link above to get started!</p>
+<div class="panel panel-default">
+  <div class="panel-heading">
+    <h3 class="panel-title"><%=link_to 'Create a hero', root_path%></h3>
+  </div>
+  <div class="panel-body">
+    <%= @name %>
+  </div>
+  <div class='panel-footer'><%=link_to 'Create A Team', home_team_path%></div>
+</div>
