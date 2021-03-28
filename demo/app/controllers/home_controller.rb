@@ -10,6 +10,8 @@ class HomeController < ApplicationController
     @hero_dayjob = Faker::Job.field
     @hero_realname = Faker::Name.first_name + ' ' + Faker::Name.last_name
     @hero_archenemy = Faker::Ancient.hero
+    @hero_hobby = Faker::Company.bs.titleize
+    @hero_age = rand(1..1000)
   end
   
   def index 
