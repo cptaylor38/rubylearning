@@ -3,7 +3,20 @@
     <h3 class="panel-title"><%=link_to 'Create a hero', root_path%></h3>
   </div>
   <div class="panel-body">
-    <%= @name %>
+    <div class="card" style="width: 18rem;">
+  <img class="card-img-top" src=<%= @avatar %> alt="Card image cap">
+  <div class="card-body">
+    <h5 class="card-title"><span class='card__helper__text'>Name: </span><%= @hero_prefix + ' ' + @hero_name + ' ' + @hero_suffix %></h5>
+    <br>
+    <p class="card-text"><span class='card__helper__text'>Description: </span><%= @hero_description %></p>
+  </div>
+  <ul class="list-group list-group-flush">
+    <li class="list-group-item"><span class='card__helper__text'>Power: </span><%= @hero_power %></li>
+    <li class="list-group-item"><span class='card__helper__text'>Day Job: </span><%= @hero_dayjob %></li>
+    <li class="list-group-item"><span class='card__helper__text'>Real Name: </span><%= @hero_realname %></li>
+    <li class="list-group-item"><span class='card__helper__text'>Arch Nemesis: </span><%= @hero_archenemy %></li>
+  </ul>
+</div>
   </div>
   <div class='panel-footer'><%=link_to 'Create A Team', home_team_path%></div>
 </div>

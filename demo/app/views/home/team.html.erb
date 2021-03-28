@@ -3,7 +3,8 @@
     <h3 class="panel-title"><%=link_to 'Create a hero', root_path%></h3>
   </div>
   <div class="panel-body">
-    Panel content
+    <%= @hero_name %>
+    <%= @hero_power %>
   </div>
   <div class='panel-footer'><%=link_to 'Create A Team', home_team_path%></div>
 </div>
