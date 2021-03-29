@@ -17,7 +17,9 @@
           ]), class: 'form-control')%>
 
           <% end %>
-        <%= render 'home/herocard' %>
+        <% @team_array.each do |hero| %>
+          <%= render :partial => 'herocard', locals: {hero: hero} %>
+        <% end %>
       </div>
     </div>
   </div>

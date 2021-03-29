@@ -1,16 +1,16 @@
 <div class="card" style="width: 20vw;">
-    <img class="card-img-top" src=<%= @avatar %> alt="Card image cap">
+    <img class="card-img-top" src=<%= hero.image %> alt="Card image cap">
     <div class="card-body">
-    <h5 class="card-title"><span class='card__helper__text'>Name:<br> </span><%= @hero_prefix + ' ' + @hero_name + ' ' + @hero_suffix %></h5>
+    <h5 class="card-title"><span class='card__helper__text'>Name:<br> </span><%= hero.prefix + ' ' + hero.name + ' ' + hero.suffix %></h5>
     <br>
-    <p class="card-text"><span class='card__helper__text'>Description:<br> </span><%= @hero_description %></p>
+    <p class="card-text"><span class='card__helper__text'>Description:<br> </span><%= hero.description %></p>
     </div>
     <ul class="list-group list-group-flush">
-    <li class="list-group-item"><span class='card__helper__text'>Power:<br> </span><%= @hero_power %></li>
-    <li class="list-group-item"><span class='card__helper__text'>Day Job:<br> </span><%= @hero_dayjob %></li>
-    <li class="list-group-item"><span class='card__helper__text'>Real Name:<br> </span><%= @hero_realname %></li>
-    <li class="list-group-item"><span class='card__helper__text'>Arch Nemesis:<br> </span><%= @hero_archenemy %></li>
-    <li class="list-group-item"><span class='card__helper__text'>Hobby:<br> </span><%= @hero_hobby %></li>
-    <li class="list-group-item"><span class='card__helper__text'>Age:<br> </span><%= @hero_age%></li>
+    <li class="list-group-item"><span class='card__helper__text'>Power:<br> </span><%= hero.power %></li>
+    <li class="list-group-item"><span class='card__helper__text'>Day Job:<br> </span><%= hero.dayjob %></li>
+    <li class="list-group-item"><span class='card__helper__text'>Real Name:<br> </span><%= hero.realname %></li>
+    <li class="list-group-item"><span class='card__helper__text'>Arch Nemesis:<br> </span><%= hero.nemesis %></li>
+    <li class="list-group-item"><span class='card__helper__text'>Hobby:<br> </span><%= hero.hobby %></li>
+    <li class="list-group-item"><span class='card__helper__text'>Age:<br> </span><%= hero.age%></li>
     </ul>
 </div>
