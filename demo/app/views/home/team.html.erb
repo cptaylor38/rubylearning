@@ -1,10 +1,25 @@
 <div class="panel panel-default">
   <div class="panel-heading">
-    <h3 class="panel-title"><%=link_to 'Create a hero', root_path%></h3>
+    <h3 class="panel-title"><%=link_to 'How many heroes on the team?', root_path%></h3>
   </div>
   <div class="panel-body">
-    <%= @hero_name %>
-    <%= @hero_power %>
+    <div class='row'>
+      <div class='col-md-4'>
+        <%= form_tag home_team_path, :method => 'POST' do%>
+          <%= submit_tag 'Build Your Team', class: 'btn btn-primary' %>
+          <%= select_tag(:team_number, options_for_select([
+            ['2', 2],
+            ['3', 3],
+            ['4', 4],
+            ['5', 5],
+            ['6', 6],
+            ['7', 7]
+          ]), class: 'form-control')%>
+
+          <% end %>
+        <%= render 'home/herocard' %>
+      </div>
+    </div>
   </div>
   <div class='panel-footer'><%=link_to 'Create A Team', home_team_path%></div>
 </div>
